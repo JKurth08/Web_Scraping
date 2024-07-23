@@ -46,9 +46,9 @@ def find_all_jobs() -> list:
     
     return all_jobs
 
-
+if __name__ == "__main__":
+    print(find_all_jobs())
 # lets try and search for jobs given key words
 
 # all jobs that contain the word 'software'
 
-# testing git push
