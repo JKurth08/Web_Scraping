@@ -44,5 +44,9 @@ fav_color_index_offset = html[fav_color_index : ].find("<")
 formatted_fav_color = html[fav_color_index : fav_color_index + fav_color_index_offset]
 print(formatted_fav_color)
 
+<<<<<<< HEAD
 # see if these changes occur 
 # testing...
+=======
+
+>>>>>>> 451b8247891d5669ee5fc5c76ec7c823238351be
