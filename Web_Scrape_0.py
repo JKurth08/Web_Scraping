@@ -1,5 +1,4 @@
 # first project in python / VS
-# create a web scrape bot or smth that gets the current bitcoin price from a website and displays it
 
 from urllib.request import urlopen
 import re
