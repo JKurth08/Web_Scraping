@@ -84,12 +84,12 @@ def job_detail() -> list:
             for detail_element in detail_elements:
                 # print(f"\n{detail_element.text}\n")
                 detail_text.append(detail_element.text)
+    global detail_length 
     detail_length = len(detail_text)
     return detail_text
 
 if __name__ == "__main__":
     for detail in job_detail():
         print(detail)
-    for i in range(len(find_company())):
-        print(f"{i + 1}: {find_company()[i]}")
+    print(detail_length)
         
