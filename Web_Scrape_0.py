@@ -45,3 +45,4 @@ formatted_fav_color = html[fav_color_index : fav_color_index + fav_color_index_o
 print(formatted_fav_color)
 
 
+# random change performed by jack k on AUG 11
