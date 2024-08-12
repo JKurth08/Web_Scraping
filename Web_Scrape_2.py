@@ -19,6 +19,7 @@ for job_element in job_elements:
 
 python_jobs = results.find_all("h2", string = lambda text: "python" in text.lower())
 
+# staging changes to test bash script
 
 # list comprhension that operates on each level of <h2> titles
 # in python_jobs

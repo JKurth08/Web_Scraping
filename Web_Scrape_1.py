@@ -27,5 +27,3 @@ for i in range(len(a_tags)):
     full_url = url + a_tags[i]["href"]
     print(full_url)
 
-
-# staging more changes for git to test bash script
