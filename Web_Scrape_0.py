@@ -30,19 +30,21 @@ formatted_title = re.sub("<.*?>", "", title)
 >>> url = "http://olympus.realpython.org/profiles/dionysus"
 """
 
-url = "http://olympus.realpython.org/profiles/dionysus"
-page = urlopen(url)
-html = page.read().decode("utf-8")
+def main_function() -> object:
+    url = "http://olympus.realpython.org/profiles/dionysus"
+    page = urlopen(url)
+    html = page.read().decode("utf-8")
 
-name_pattern = "<h2>Name:.*?</h2>"
-match_result = re.search(name_pattern, html, re.IGNORECASE)
-name = match_result.group()
-fomatted_name = re.sub("<.*?>", "", name)
+    name_pattern = "<h2>Name:.*?</h2>"
+    match_result = re.search(name_pattern, html, re.IGNORECASE)
+    name = match_result.group()
+    fomatted_name = re.sub("<.*?>", "", name)
 
-fav_color_index = html.find("Favorite Color: ")
-fav_color_index_offset = html[fav_color_index : ].find("<")
-formatted_fav_color = html[fav_color_index : fav_color_index + fav_color_index_offset]
-print(formatted_fav_color)
+    fav_color_index = html.find("Favorite Color: ")
+    fav_color_index_offset = html[fav_color_index : ].find("<")
+    formatted_fav_color = html[fav_color_index : fav_color_index + fav_color_index_offset]
+    print(formatted_fav_color)
 
 
-# random change performed by jack k on AUG 11
+if __name__ == "__main__":
+    main_function()
