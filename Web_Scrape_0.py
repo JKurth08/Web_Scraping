@@ -49,4 +49,3 @@ def main_function() -> object:
 if __name__ == "__main__":
     main_function()
 
-t
