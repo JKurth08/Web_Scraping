@@ -40,5 +40,3 @@ for job_element in python_job_elements:
         if link.text == "Apply":
             print(f"{link.text}: {full_url}")
     print()                   
-
-# changing from testing_2
