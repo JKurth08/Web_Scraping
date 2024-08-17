@@ -41,8 +41,4 @@ for job_element in python_job_elements:
             print(f"{link.text}: {full_url}")
     print()                   
 
-<<<<<<< HEAD
-# changing file from main
-=======
 # changing from testing_2
->>>>>>> testing_2
